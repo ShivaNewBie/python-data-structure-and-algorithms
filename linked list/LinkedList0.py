@@ -17,6 +17,7 @@ class Node(object):
         self.data = d
 
 
+
 class LinkedList (object):
 
     def __init__(self, r = None):
@@ -27,8 +28,8 @@ class LinkedList (object):
         return self.size
 
     def add (self, d):
-        new_node = Node (d, self.root)
-        self.root = new_node
+        new_node = Node (d, self.root) #the current node will be the 2nd node
+        self.root = new_node #change root node to new node
         self.size += 1
 
     def remove (self, d):
