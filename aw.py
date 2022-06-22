@@ -1,21 +1,14 @@
 
+class Test():
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def set_name(self, nice):
+        self.name = nice 
 
+    def __str__(self):
+        return str(self.name) + str(self.age)
 
-def binary_search(sequence, item):
-    start_pos = 0
-    end_pos = len(sequence) - 1 
+a = Test('cat','test')
 
-    while start_pos <= end_pos:
-        mid_pos = (start_pos + end_pos) // 2 
-        if sequence[mid_pos] == item:
-            return mid_pos
-        elif sequence[mid_pos] < item:
-            start_pos = mid_pos + 1
-        else: 
-            end_pos = mid_pos - 1 
-    return None
-
-test = binary_search([1,3,5,8,10,15,21,27], 3)
-
-print(test)
-
+print(5/10)

@@ -13,12 +13,12 @@ def binary_search(sequence, item):
         if sequence[mid_pos] == item: 
             return mid_pos
         elif sequence[mid_pos] < item: #we add plus one because we wanted to move on to the next index position. a visual representation https://stackoverflow.com/a/47256666
-            start_pos = mid_pos + 1
+            start_pos = mid_pos
         else: 
-            end_pos = mid_pos - 1 
+            end_pos = mid_pos
     return None
 
-test = binary_search([1,3,5,8,10,15,21,27], 3)
+test = binary_search([1,3,5,8,10,15,21,27], 21)
 
 print(test)
 
